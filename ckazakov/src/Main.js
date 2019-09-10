@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {
     Route,
     NavLink,
@@ -13,16 +13,17 @@ import {
           return (
             <HashRouter>
                 <div>
-                <ul className="header">
-                    <li><NavLink exact to="/">Home</NavLink></li>
-                    <li><NavLink to="/">Blog</NavLink></li>
-                    <li><NavLink to="/">Resume</NavLink></li>
-                </ul>
-                <div className="content">
-                    <Route path="/" component={Home}/>
-                    <Route path="/blog" component={Blog}/>
-                    <Route path="/resume" component={Resume}/>
-                </div>
+                    <h1>Test</h1>
+                    <ul className="header">
+                        <li><NavLink to="/">Home</NavLink></li>
+                        <li><NavLink to="/blog">Blog</NavLink></li>
+                        <li><NavLink to="/resume">Resume</NavLink></li>
+                    </ul>
+                    <div className="content">
+                        <Route path="/" component={Home}/>
+                        <Route path="/blog" component={Blog}/>
+                        <Route path="/resume" component={Resume}/>
+                    </div>
                 </div>
             </HashRouter>
           );
